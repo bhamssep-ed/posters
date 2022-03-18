@@ -1,1 +1,6 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
+
+page-col: "#0a131e"
+text-col: "#f2feff"
+link-col: "#008AFF"
+hover-col: "#0085A1"
