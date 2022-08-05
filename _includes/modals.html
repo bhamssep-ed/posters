@@ -1,4 +1,4 @@
- <!-- Portfolio Modals -->
+ <!-- People Modals -->
  {% for post in site.people %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -15,26 +15,6 @@
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
                             {% endif %}
-                            <ul class="list-inline item-details">
-                                {% if post.client %}
-                                    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.project-date %}
-                                    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.category %}
-                                    <li>Service:
-                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                            </ul>
                             {{ post.content | markdownify }}
                             <a href="pdf/{{post.pdf}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Poster</a>
                             <!-- Social media and websites go here -->
