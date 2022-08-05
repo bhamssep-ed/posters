@@ -5,8 +5,7 @@ description: "Write an awesome description for your new site here. You can edit 
 keywords: "your keywords, separated by commas"
 subtitle: "Black History Month - October 2022"
 meta_author: Sun, Stars and Exoplanets Group, University of Birmingham
-github_username:  bhamssep-ed
-baseurl: /posters
+baseurl: "/posters"
 
 # Google webmaster tools
 google_verify:
