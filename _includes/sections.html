@@ -9,8 +9,10 @@
                     <hr class="star-{{ thecycle }}">
                 </div>
             </div>
-            <div class="row text-center">
-                {{ section.content | markdownify }}
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    {{ section.content | markdownify }}
+                </div>
             </div>
         </div>
     </section>
