@@ -1,39 +1,49 @@
-# Welcome to SASP E&D Posters
-{:.no_toc}
+# posters
 
-Text goes here.
+This website is still a work in progress. Preview it live [here](https://bhamssep-ed.github.io/posters).
 
-* table of contents
-{:toc}
+## Contributing
 
-## Background
+Pick a person and edit their file under the `_people` directory. You can
+edit directly on GitHub or make a Pull Request if you are familiar with that
+workflow. GitHub lets you preview the page before committing your changes. Please check this before submitting a change.
 
-Text goes here.
+The files are in Markdown format. Most content can be written as plain text.
+There is some syntax which helps format the content. Section headings should be
+written like so,
 
-## Mae C Jemison
+```markdown
+## Section 1
 
-![poster](assets/img/Dr_Mae_Jemison.png){: .small-image}
+Content for section 1 goes here...
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Section 2
 
-## Gibor Basri
+Content for section 2 goes here...
+```
 
-Text goes here.
+and links to external resources can be written like so,
 
-## Katherine Johnson
+```markdown
+[text to be linked](https://www.example.com)
+```
 
-Text goes here.
+Text can be made italic and bold,
 
-## Sian Proctor
+```markdown
+*italic text*
+**bold text**
+```
 
-Text goes here.
+and bullet points can be written like so,
 
-## Sylvester J Gates
+```markdown
+- Using a hyphen
+* Or using an asterisk
+```
 
-Text goes here.
-
-## Tracy Drain
-
-Text goes here.
+These will then be formatted appropriately given the website theme.
 
 ## Acknowledgements
+
+- Theme based on the [Freelancer Jekyll theme ](https://github.com/jeromelachaud/freelancer-theme)

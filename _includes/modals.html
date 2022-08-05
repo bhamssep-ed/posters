@@ -1,0 +1,54 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.people %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa fa-times-circle fa-3x"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h1>{{ post.title }}</h1>
+                            <hr class="star-secondary">
+                            <img src="img/people/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
+                            <ul class="list-inline item-details">
+                                {% if post.client %}
+                                    <li>Client:
+                                        <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.project-date %}
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.category %}
+                                    <li>Service:
+                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                            {{ post.content | markdownify }}
+                            <a href="pdf/{{post.pdf}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Poster</a>
+                            <!-- Social media and websites go here -->
+                            {% if post.website %}
+                            <a href="https://{{post.website}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i> Website</a>
+                            {% endif %}
+                            {% if post.twitter %}
+                            <a href="https://twitter.com/{{post.twitter}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> Twitter</a>
+                            {% endif %}
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
