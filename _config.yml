@@ -7,7 +7,7 @@ subtitle: "Black History Month - October 2022"
 meta_author: Sun, Stars and Exoplanets Group, University of Birmingham
 
 url: "https://bhamssep-ed.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/posters" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 github_username:  bhamssep-ed
 
 # Google webmaster tools
