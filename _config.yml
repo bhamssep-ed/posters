@@ -21,7 +21,7 @@
 title: SASP E&D Posters
 description: >- # this means to ignore newlines until "baseurl:"
     Website for more information about the posters.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/posters" # the subpath of your site, e.g. /blog
 url: "https://bhamssep-ed.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  bhamssep-ed
 
