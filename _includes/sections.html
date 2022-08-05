@@ -1,0 +1,17 @@
+{% for section in site.sections %}
+    {% capture thecycle %}{% cycle 'primary', 'secondary' %}{% endcapture %}
+    {% assign id = section.title | downcase | replace: ' ', '-' %}
+    <section class="{{ thecycle }}" id="{{ id }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>{{ section.title }}</h1>
+                    <hr class="star-{{ thecycle }}">
+                </div>
+            </div>
+            <div class="row text-center">
+                {{ section.content | markdownify }}
+            </div>
+        </div>
+    </section>
+{% endfor %}
