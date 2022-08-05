@@ -290,6 +290,20 @@ section.secondary {
     }
   } */
 
+.btn-default {
+    margin: 5px;
+    background-color: #{{ site.color.secondary }};
+    border: 0;
+    border-radius: 6px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    opacity: .5;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -426,10 +440,11 @@ footer .footer-below {
 
 .portfolio-modal .modal-content {
     display: flex;
-    padding: 50px 0;
+    padding: 60px 0;
     min-height: 100%;
     width: 80%;
     margin: 0 auto;
+    overflow-x: scroll;  /* Just in case there is overflow */
     border: 0;
     border-radius: 0;
     text-align: center;
@@ -443,6 +458,13 @@ footer .footer-below {
     font-size: 3em;
 }
 
+/* Smaller headings if on a small screen */
+@media(max-width:768px) {
+    .portfolio-modal .modal-content h1 {
+        font-size: 2.4em;
+    }
+}
+
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
@@ -453,16 +475,16 @@ footer .footer-below {
 
 .portfolio-modal .close-modal {
     position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .3;
+    opacity: .5;
 }
 
 .portfolio-modal .close-modal .lr {
