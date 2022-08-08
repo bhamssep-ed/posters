@@ -4,10 +4,71 @@ title: Example
 hidden: true
 ---
 
-## Heading 1
+<!-- Comments are written like this -->
+<!-- The above section is some meta data for the file used when generating
+the HTML -->
 
-Example link [here]()
+## Headings
 
-### Heading 2
+Headings are preceded with a multiple of `#` for the level of subheading. For
+example,
 
-Vestibulum mauris felis, feugiat et vestibulum ut, suscipit et ex. Pellentesque quis odio ac ex dignissim consectetur. Sed efficitur vel magna eget vulputate. Aliquam lobortis sagittis neque a bibendum. Curabitur non luctus urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent lectus tortor, dapibus at sagittis at, vulputate eget odio. Cras facilisis vel ex nec consequat. Mauris eget ante viverra, dignissim libero non, tristique metus. Aenean placerat ligula in velit finibus, nec semper orci tincidunt. Nulla lobortis pretium metus sodales rutrum. Donec ac metus a risus pharetra aliquam id id nulla. Duis vulputate metus eu diam sollicitudin, vitae ultricies augue suscipit. Nam in dapibus nisl, a varius massa. Quisque efficitur nisl at nibh semper euismod non gravida dolor.
+```markdown
+# Title
+## Section
+### Subsection
+```
+
+renders like this,
+
+# Title
+## Section
+### Subsection
+
+## Code
+
+Above, we have used a codeblock, surrounded by triple start-quotes \`\`\`
+and the name of the programming language for syntax highlighting.
+
+Inline code may be surrounded by single start-quotes.
+
+## Lists
+
+Unordered list items are preceded by either an asterisk, `*` or a hyphen, `-`.
+E.g.
+
+```markdown
+* Item 1
+- Item 2
+    - Sub-item 1
+    * Sub-item 2
+```
+
+renders like this,
+
+* Item 1
+- Item 2
+    - Sub-item 1
+    * Sub-item 2
+
+Ordered lists are preceded by their number and a full-stop, e.g.
+
+```markdown
+1. Item 1
+2. Item 2
+```
+
+renders like this,
+
+1. Item 1
+2. Item 2
+
+## Links and Images
+
+Links are written like `[this](<url goes here>)`, which renders like
+[this]().
+
+Images are written like this, `![alt text](../img/people/Basri_Tile.png)` which
+renders like this,
+
+![alt text](../img/people/Basri_Tile.png)
