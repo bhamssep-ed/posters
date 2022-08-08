@@ -3,8 +3,8 @@ title: Mae C. Jemison
 layout: default
 modal-id: mae-jemison
 img: Jemison_Tile.png
-alt: image-alt
+alt: Illustration of Mae C. Jemison
 pdf: Mae_Jemison-June.pdf
 ---
 
-Text goes here.
+<!-- Write page content below this line -->

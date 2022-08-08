@@ -3,8 +3,8 @@ title: Sylvester J. Gates
 layout: default
 modal-id: sylvester-gates
 img: Gates_Tile.png
-alt: image-alt
+alt: Illustration of Sylvester J. Gates
 pdf: Sylvester_Gates-June.pdf
 ---
 
-Text goes here.
+<!-- Write page content below this line -->

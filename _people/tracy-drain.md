@@ -3,8 +3,8 @@ title: Tracy Drain
 layout: default
 modal-id: tracy-drain
 img: Drain_Tile.png
-alt: image-alt
+alt: Illustration of Tracy Drain
 pdf: Tracy_Drain-June.pdf
 ---
 
-Text goes here.
+<!-- Write page content below this line -->
