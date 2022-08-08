@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Example
+hidden: true
 ---
 
 ## Heading 1
