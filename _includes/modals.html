@@ -1,6 +1,7 @@
- <!-- People Modals -->
- {% for post in site.people %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- People Modals -->
+{% for person in site.people %}
+    <!-- {{ person.title }} -->
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ person.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <i class="fa fa fa-times-circle fa-3x"></i>
@@ -9,26 +10,28 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h1>{{ post.title }}</h1>
+                            <h1>{{ person.title }}</h1>
                             <hr class="star-secondary">
-                            <img src="img/people/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            {% if post.description %}
-                                <p>{{ post.description }}</p>
+                            <img src="img/people/{{ person.img }}" class="img-responsive img-centered" alt="{{ person.alt }}">
+                            {% if person.description -%}
+                                <p>{{ person.description }}</p>
+                            {% endif -%}
+                            {{ person.content | markdownify }}
+                            <!-- Poster PDF -->
+                            <a href="pdf/{{person.pdf}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Poster</a>
+                            
+                            {% if person.website -%}
+                            <!-- Website -->
+                            <a href="https://{{person.website}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i> Website</a>
                             {% endif %}
-                            {{ post.content | markdownify }}
-                            <a href="pdf/{{post.pdf}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Poster</a>
-                            <!-- Social media and websites go here -->
-                            {% if post.website %}
-                            <a href="https://{{post.website}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i> Website</a>
+                            {% if person.twitter -%}
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/{{person.twitter}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> Twitter</a>
                             {% endif %}
-                            {% if post.twitter %}
-                            <a href="https://twitter.com/{{post.twitter}}" type="button" class="btn btn-default" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> Twitter</a>
-                            {% endif %}
-                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-{% endfor %}
+{% endfor -%}

@@ -1,4 +1,4 @@
-   <!-- Navigation -->
+<!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,10 +22,12 @@
                         <a href="#people">People</a>
                     </li>
                     {% for section in site.sections %}
+                    {% unless section.hidden %}
                     {% assign id = section.title | downcase | replace: ' ', '-' %}
                     <li class="page-scroll">
                         <a href="#{{ id }}">{{ section.title }}</a>
                     </li>
+                    {% endunless %}
                     {% endfor %}
                 </ul>
             </div>

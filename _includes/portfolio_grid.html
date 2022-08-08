@@ -1,5 +1,4 @@
-
-    <!-- Portfolio Grid Section -->
+<!-- People Grid -->
     <section id="people">
         <div class="container portfolio-flex-grid">
             <div class="row">
@@ -10,16 +9,17 @@
             </div>
             <div class="portfolio-flex-row">
                 {% for post in site.people %}
-                    <div class="portfolio-flex-item portfolio-item">
-                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-expand fa-3x"></i>
-                                </div>
+                <!-- {{ post.title }} -->
+                <div class="portfolio-flex-item portfolio-item">
+                    <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-expand fa-3x"></i>
                             </div>
-                            <img src="img/people/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        </a>
-                    </div>
+                        </div>
+                        <img src="img/people/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                    </a>
+                </div>
                 {% endfor %}
             </div>
         </div>

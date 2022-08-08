@@ -1,6 +1,8 @@
-{% for section in site.sections %}
-    {% capture thecycle %}{% cycle 'primary', 'secondary' %}{% endcapture %}
-    {% assign id = section.title | downcase | replace: ' ', '-' %}
+{% for section in site.sections -%}
+    {% unless section.hidden -%}
+    {% capture thecycle -%}{% cycle 'primary', 'secondary' -%}{% endcapture -%}
+    {% assign id = section.title | downcase | replace: ' ', '-' -%}
+    <!-- {{ section.title }} -->
     <section class="{{ thecycle }}" id="{{ id }}">
         <div class="container">
             <div class="row">
@@ -12,4 +14,5 @@
             </div>
         </div>
     </section>
-{% endfor %}
+    {% endunless -%}
+{% endfor -%}
