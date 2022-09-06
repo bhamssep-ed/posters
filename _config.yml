@@ -1,8 +1,8 @@
 # Site settings
-title: Black in Astro
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
+title: Space is Black
+email:
+description: "A celebration of people of colour in astronomy."
+keywords: "astronomy, astrophysics, black, history, people, people of colour, posters, space"
 subtitle: "Black History Month - October 2022"
 meta_author: Lyttle Alexander
 baseurl: "/posters"
