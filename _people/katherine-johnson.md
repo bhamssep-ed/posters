@@ -4,7 +4,7 @@ layout: default
 modal-id: katherine-johnson
 img: Johnson_Tile.png
 alt: Illustration of Katherine Johnson
-pdf: Katherine_Johnson-June.png
+pdf: Katherine_Johnson.png
 ---
 ## Poster Text
 

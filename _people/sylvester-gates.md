@@ -4,7 +4,7 @@ layout: default
 modal-id: sylvester-gates
 img: Gates_Tile.png
 alt: Illustration of Sylvester J. Gates
-pdf: Sylvester_Gates-June.pdf
+pdf: Sylvester_Gates.pdf
 ---
 ## Poster Text
 

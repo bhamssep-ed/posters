@@ -4,7 +4,7 @@ layout: default
 modal-id: mae-jemison
 img: Jemison_Tile.png
 alt: Illustration of Mae C. Jemison
-pdf: Mae_Jemison-June.pdf
+pdf: Mae_Jemison.pdf
 ---
 
 ## Poster Text

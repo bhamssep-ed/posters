@@ -4,7 +4,7 @@ layout: default
 modal-id: gibor-basri
 img: Basri_Tile.png
 alt: Illustration of Gibor Basri
-pdf: Gibor_Basri-June.pdf
+pdf: Gibor_Basri.pdf
 ---
 ## Poster Text
 Gibor Basri’s research focusses on the physics of stars. From magnetic activity to star formation, he has made significant contributions to our understanding of stellar evolution. <sup>[1]</sup>
